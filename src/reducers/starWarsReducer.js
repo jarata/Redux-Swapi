@@ -18,7 +18,7 @@ export const charsReducer = (state = initialState, action) => {
     case FETCH_SW_SUCCESS:
       return {
         ...state,
-        characters: action.payload
+        characters: action.payload.results
       };
     case FETCH_SW_ERROR:
       return {
